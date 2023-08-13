@@ -1,0 +1,48 @@
+name: autoAction
+on: [push]
+jobs:
+  Test-GitHub-Actions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: curl
+        continue-on-error: true
+        run: |
+          echo -e '\n-------------------------------------------------\n'
+          echo -e '\nhttp://122.224.218.18:9999/esn_mobile_pns/service/userTokenService\n'
+          curl -i -s -k --compressed -m 10 -X $'POST' -H $'Accept: text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2' -H $'Connection: close' -H $'Content-Length: 1' -H $'Content-Type: application/octet-stream' -H $'User-Agent: Java/1.8.0_191' -d $'a' $'http://122.224.218.18:9999/esn_mobile_pns/service/userTokenService'
+          echo -e '\n-------------------------------------------------\n'
+      - name: curl
+        continue-on-error: true
+        run: |
+          echo -e '\n-------------------------------------------------\n'
+          echo -e '\nhttp://111.198.15.151:9999/esn_mobile_pns/service/userTokenService\n'
+          curl -i -s -k --compressed -m 10 -X $'POST' -H $'Accept: text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2' -H $'Connection: close' -H $'Content-Length: 1' -H $'Content-Type: application/octet-stream' -H $'User-Agent: Java/1.8.0_191' -d $'a' $'http://111.198.15.151:9999/esn_mobile_pns/service/userTokenService'
+          echo -e '\n-------------------------------------------------\n'
+      - name: curl
+        continue-on-error: true
+        run: |
+          echo -e '\n-------------------------------------------------\n'
+          echo -e '\nhttp://58.67.159.123:9999/esn_mobile_pns/service/userTokenService\n'
+          curl -i -s -k --compressed -m 10 -X $'POST' -H $'Accept: text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2' -H $'Connection: close' -H $'Content-Length: 1' -H $'Content-Type: application/octet-stream' -H $'User-Agent: Java/1.8.0_191' -d $'a' $'http://58.67.159.123:9999/esn_mobile_pns/service/userTokenService'
+          echo -e '\n-------------------------------------------------\n'
+      - name: curl
+        continue-on-error: true
+        run: |
+          echo -e '\n-------------------------------------------------\n'
+          echo -e '\nhttp://14.215.209.2:9999/esn_mobile_pns/service/userTokenService\n'
+          curl -i -s -k --compressed -m 10 -X $'POST' -H $'Accept: text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2' -H $'Connection: close' -H $'Content-Length: 1' -H $'Content-Type: application/octet-stream' -H $'User-Agent: Java/1.8.0_191' -d $'a' $'http://14.215.209.2:9999/esn_mobile_pns/service/userTokenService'
+          echo -e '\n-------------------------------------------------\n'
+      - name: curl
+        continue-on-error: true
+        run: |
+          echo -e '\n-------------------------------------------------\n'
+          echo -e '\nhttp://222.128.44.174:9999/esn_mobile_pns/service/userTokenService\n'
+          curl -i -s -k --compressed -m 10 -X $'POST' -H $'Accept: text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2' -H $'Connection: close' -H $'Content-Length: 1' -H $'Content-Type: application/octet-stream' -H $'User-Agent: Java/1.8.0_191' -d $'a' $'http://222.128.44.174:9999/esn_mobile_pns/service/userTokenService'
+          echo -e '\n-------------------------------------------------\n'
+      - name: curl
+        continue-on-error: true
+        run: |
+          echo -e '\n-------------------------------------------------\n'
+          echo -e '\nhttp://60.165.34.164:9999/esn_mobile_pns/service/userTokenService\n'
+          curl -i -s -k --compressed -m 10 -X $'POST' -H $'Accept: text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2' -H $'Connection: close' -H $'Content-Length: 1' -H $'Content-Type: application/octet-stream' -H $'User-Agent: Java/1.8.0_191' -d $'a' $'http://60.165.34.164:9999/esn_mobile_pns/service/userTokenService'
+          echo -e '\n-------------------------------------------------\n'
