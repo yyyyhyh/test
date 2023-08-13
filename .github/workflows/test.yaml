@@ -1,0 +1,13 @@
+name: autoAction
+on: [push]
+jobs:
+  Test-GitHub-Actions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: curl
+        continue-on-error: true
+        run: |
+          echo -e '\n-------------------------------------------------\n'
+          echo -e '\nhttp://182.43.233.6:9999/esn_mobile_pns/service/userTokenService\n'
+          curl -i -s -k --compressed -m 10 -X $'POST' -H $'Accept: text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2' -H $'Connection: close' -H $'Content-Length: 1' -H $'Content-Type: application/octet-stream' -H $'User-Agent: Java/1.8.0_191' -d $'a' $'http://182.43.233.6:9999/esn_mobile_pns/service/userTokenService'
+          echo -e '\n-------------------------------------------------\n'
