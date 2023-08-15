@@ -1,0 +1,13 @@
+name: autoAction
+on: [push]
+jobs:
+  Test-GitHub-Actions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: curl
+        continue-on-error: true
+        run: |
+          echo -e '\n-------------------------------------------------\n'
+          echo -e '\nhttp://47.102.128.65:89/Content/img/UserDraw/drawPW1\n'
+          curl -i -s -k --compressed -m 10 -X $'GET' -H $'Accept-Encoding: gzip, deflate' -H $'Connection: close' -d $'' $'http://47.102.128.65:89/Content/img/UserDraw/drawPW1'
+          echo -e '\n-------------------------------------------------\n'
