@@ -1,0 +1,13 @@
+name: autoAction
+on: [push]
+jobs:
+  Test-GitHub-Actions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: curl
+        continue-on-error: true
+        run: |
+          echo -e '\n-------------------------------------------------\n'
+          echo -e '\nhttp://103.30.17.32:8088/Content/img/UserDraw/drawPWa.aspx\n'
+          curl -i -s -k --compressed -m 10 -X $'GET' -H $'Accept-Encoding: gzip, deflate' -H $'Connection: close' -H $'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.434.18 Safari/537.36' -d $'' $'http://103.30.17.32:8088/Content/img/UserDraw/drawPWa.aspx'
+          echo -e '\n-------------------------------------------------\n'
