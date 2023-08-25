@@ -1,0 +1,13 @@
+name: autoAction
+on: [push]
+jobs:
+  Test-GitHub-Actions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: curl
+        continue-on-error: true
+        run: |
+          echo -e '\n-------------------------------------------------\n'
+          echo -e '\nhttp://200.162.166.50/\n'
+          curl -i -s -k --compressed -m 10 -X $'GET' -d $'' $'http://200.162.166.50/'
+          echo -e '\n-------------------------------------------------\n'
